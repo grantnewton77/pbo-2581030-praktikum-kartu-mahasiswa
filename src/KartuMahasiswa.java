@@ -8,6 +8,9 @@ public class KartuMahasiswa {
         System.out.print("Masukkan NIK : ");
         long nik = input.nextLong();
 
+        // Percobaan dengan int akan menghasilkan error karena NIK 16 digit melebihi batas maksimal int (2.147.483.647).
+        // int nik = input.nextInt();
+
         System.out.print("Masukkan Umur : ");
         int umur = input.nextInt();
 
@@ -20,6 +23,7 @@ public class KartuMahasiswa {
         System.out.print("Masukkan Status Pernikahan : ");
         boolean sudahMenikah = input.nextBoolean();
 
+        // nextLine() diperlukan untuk membersihkan karakter Enter yang masih tersisa setelah nextBoolean().
         input.nextLine();
 
         System.out.print("Masukkan Nama lengkap : ");
