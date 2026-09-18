@@ -17,6 +17,8 @@ public class KartuMahasiswa {
         System.out.print("Masukkan Golongan Darah : ");
         char golonganDarah = input.next().charAt(0);
 
+        System.out.print("Masukkan Status Pernikahan : ");
+        boolean sudahMenikah = input.nextBoolean();
 
 
 
@@ -28,6 +30,7 @@ public class KartuMahasiswa {
         System.out.println("Umur        : " + umur + " tahun");
         System.out.println("Tinggi      : " + tinggiBadan + " cm");
         System.out.println("Gol darah   : " + golonganDarah);
+        System.out.println("Menikah     : " + sudahMenikah);
 
 
         input.close();
