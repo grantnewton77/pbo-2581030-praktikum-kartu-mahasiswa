@@ -9,7 +9,10 @@ public class KartuMahasiswa {
         long nik = input.nextLong();
 
         // Percobaan dengan int akan menghasilkan error karena NIK 16 digit melebihi batas maksimal int (2.147.483.647).
-        // int nik = input.nextInt();
+        // ini pesan eror yang muncul : Exception in thread "main" java.util.InputMismatchException: For input string: "9881949002581030"
+        //	at java.base/java.util.Scanner.nextInt(Scanner.java:2273)
+        //	at java.base/java.util.Scanner.nextInt(Scanner.java:2221)
+        //	at KartuMahasiswa.main(KartuMahasiswa.java:9)
 
         System.out.print("Masukkan Umur : ");
         int umur = input.nextInt();
